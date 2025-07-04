@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#about img {
+    display: block;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    section {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+
+    #about img {
+        width: 100px;
+    }
+}
+.projects-bg {
+    background-image: url('images/bg_1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 2rem;
+    color: white;
+}
+
+.projects-bg h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.project-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+}
+
+.project-card h3 a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.project-card p {
+    color: #e0e0e0;
+}
+
+.message-section {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.message-section .github-link {
+    color: #42a5cd;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.message-section .github-link:hover {
+    text-decoration: underline;
+    color: #1da1f2;
+}
+
+.quote {
+    font-style: italic;
+    color: #f1f1f1;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    
+}
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+footer p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+/* Mobile-friendly layout for project section */
+@media (max-width: 767px) {
+  .projects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .project-card {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: var(--box-bg, #1e1e1e); /* fallback for dark mode */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .project-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .project-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .message-section {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .message-section h2 {
+    font-size: 1.1rem;
+  }
+
+  .quote {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: var(--text-color);
+  }
+}

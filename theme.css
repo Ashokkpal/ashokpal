@@ -1,0 +1,116 @@
+/* ===== Theme Variables ===== */
+
+/* Light Mode (default) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --primary-color: #00acee;
+}
+
+/* Dark Mode Overrides */
+body.dark-mode {
+  --bg-color: #111111;
+  --text-color: #f0f0f0;
+  --primary-color: #1da1f2;
+}
+
+/* ===== Theme Application ===== */
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  padding: 2rem;
+}
+
+a {
+  color: var(--primary-color);
+}
+
+/* ===== Theme Toggle Button ===== */
+
+.theme-toggle-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.1);
+  background-color: #007bb5;
+}
+
+
+/* Floating DateTime Display */
+.datetime-box {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  padding: 8px 12px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  background-color: rgba(0, 172, 238, 0.9);
+  color: #fff;
+  border-radius: 8px;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  font-family: 'Courier New', monospace;
+}
+
+body.dark-mode .datetime-box {
+  background-color: #333;
+  color: #fff;
+}
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --box-bg: #f9f9f9;
+  --primary-color: #00acee;
+}
+
+body.dark-mode {
+  --bg-color: #111111;
+  --text-color: #f0f0f0;
+  --box-bg: #1e1e1e;
+  --primary-color: #1da1f2;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --box-bg: #f9f9f9;
+  --primary-color: #00acee;
+}
+
+body.dark-mode {
+  --bg-color: #111111;
+  --text-color: #f0f0f0;
+  --box-bg: #1e1e1e;
+  --primary-color: #1da1f2;
+}
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --box-bg: #f9f9f9;
+  --primary-color: #00acee;
+}
+
+body.dark-mode {
+  --bg-color: #111111;
+  --text-color: #f9f9f9;
+  --box-bg: #1e1e1e;
+  --primary-color: #1da1f2;
+}

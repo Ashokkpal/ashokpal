@@ -1,0 +1,154 @@
+.contact-section {
+  background: var(--bg-color);
+  padding: 2rem 1rem;
+  color: var(--text-color);
+}
+
+.heading-section h1,
+.heading-section h2,
+.heading-section p {
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.box {
+  background: var(--box-bg);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: var(--box-bg);
+  color: var(--text-color);
+}
+
+.btn {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #007bb5;
+}
+
+.ftco-footer-social li {
+  margin: 0 0.5rem;
+}
+
+.ftco-footer-social .icon-github,
+.icon-linkedin,
+.icon-telegram,
+.icon-facebook,
+.icon-instagram {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.contact-single-column {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  padding: 1rem;
+  background: var(--box-bg);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-box {
+  text-align: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.contact-box:last-child {
+  border-bottom: none;
+}
+
+.contact-box h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.contact-box p {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.contact-box a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.contact-box a:hover {
+  text-decoration: underline;
+}
+
+.contact-inline {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: var(--box-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.contact-item {
+  flex: 1 1 22%;
+  min-width: 200px;
+  text-align: center;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: var(--box-bg);
+}
+
+.contact-item h3 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.contact-item p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-color);
+}
+
+.contact-item a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+.form-group {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.form-group button {
+  display: inline-block;
+}

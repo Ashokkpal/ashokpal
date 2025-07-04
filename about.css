@@ -1,0 +1,81 @@
+.about-section {
+  padding: 2rem;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.about-left {
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.about-left .about-image {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.about-left h2 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.about-left .role {
+  font-size: 1rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.about-left .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.about-left .social-links a {
+  display: inline-block;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* Primary button style */
+.about-left .social-links a.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  border: 1px solid var(--primary-color);
+}
+
+/* Outline button style (GitHub) */
+.about-left .social-links a.btn-outline {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+/* Hover styles for both */
+.about-left .social-links a:hover {
+  background-color: #007bb5;
+  color: white;
+  border-color: #007bb5;
+}
+
+.about-right {
+  flex: 2 1 400px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-color);
+}
