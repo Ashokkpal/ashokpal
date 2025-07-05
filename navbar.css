@@ -1,26 +1,32 @@
-.floating-nav {
+/* Hide mobile nav on desktop */
+.floating-nav-mobile {
+  display: none;
+}
+
+/* Desktop floating nav */
+.floating-nav-desktop {
   position: fixed;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  z-index: 9999;
+  z-index: 999;
   background: rgba(0, 172, 238, 0.9);
   border-radius: 10px 0 0 10px;
   padding: 0.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-.floating-nav ul {
+.floating-nav-desktop ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.floating-nav ul li {
+.floating-nav-desktop ul li {
   margin: 0.5rem 0;
 }
 
-.floating-nav ul li a {
+.floating-nav-desktop ul li a {
   color: #fff;
   text-decoration: none;
   font-size: 0.9rem;
@@ -30,11 +36,70 @@
   transition: background 0.3s ease;
 }
 
-.floating-nav ul li a:hover {
+.floating-nav-desktop ul li a:hover {
   background-color: #007bb5;
 }
 
-/* Optional smooth scrolling */
-html {
-  scroll-behavior: smooth;
+/* Mobile Nav styles */
+@media (max-width: 768px) {
+  .floating-nav-desktop {
+    display: none;
+  }
+
+  .floating-nav-mobile {
+    display: block;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 9999;
+  }
+
+  .mobile-menu-btn {
+    background: #00acee;
+    color: white;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    font-size: 0.9rem;
+    padding: 0.4rem;
+    line-height: 1.2;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .mobile-menu-btn span {
+    display: block;
+    font-weight: bold;
+  }
+
+  #mobile-nav-links {
+    display: none;
+    background: rgba(0, 172, 238, 0.95);
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border-radius: 8px 0 0 8px;
+  }
+
+  #mobile-nav-links.show {
+    display: block;
+  }
+
+  #mobile-nav-links li {
+    list-style: none;
+    margin: 0.5rem 0;
+  }
+
+  #mobile-nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    display: block;
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+
+  #mobile-nav-links a:hover {
+    background-color: #007bb5;
+  }
 }

@@ -2,18 +2,20 @@
   padding: 2rem;
   background: var(--bg-color);
   color: var(--text-color);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .about-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center; /* Ensures vertical centering on desktop */
   gap: 2rem;
-  align-items: flex-start;
 }
 
 .about-left {
-  flex: 1 1 250px;
+  flex: 1 1 100%;
   max-width: 300px;
   text-align: center;
 }
@@ -25,20 +27,20 @@
 }
 
 .about-left h2 {
-  font-size: 1.5rem;
-  margin: 0.5rem 0;
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
 }
 
 .about-left .role {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: var(--primary-color);
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .about-left .social-links {
   display: flex;
   justify-content: center;
-  gap: 0.75rem;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
@@ -48,25 +50,25 @@
   font-size: 0.9rem;
   border-radius: 6px;
   text-decoration: none;
-  transition: 0.3s;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-/* Primary button style */
+/* Primary button */
 .about-left .social-links a.btn-primary {
   background-color: var(--primary-color);
   color: white;
   border: 1px solid var(--primary-color);
 }
 
-/* Outline button style (GitHub) */
+/* Outline button */
 .about-left .social-links a.btn-outline {
   background-color: transparent;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
 
-/* Hover styles for both */
+/* Hover styles */
 .about-left .social-links a:hover {
   background-color: #007bb5;
   color: white;
@@ -74,8 +76,55 @@
 }
 
 .about-right {
-  flex: 2 1 400px;
+  flex: 1 1 100%;
   font-size: 1rem;
   line-height: 1.6;
+  text-align: left;
   color: var(--text-color);
+}
+
+/* Desktop-specific layout */
+@media (min-width: 992px) {
+  .about-container {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .about-left {
+    flex: 0 0 300px;
+    max-width: 300px;
+  }
+
+  .about-right {
+    flex: 1;
+    padding-left: 2rem;
+  }
+}
+.about-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.about-info h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.about-info .role {
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
 }
